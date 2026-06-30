@@ -3,27 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>우리가게 전기벤치</title>
+<title>우리가게 에너지벤치</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="phone">
 
   <header class="bar">
-    <div class="logo">우리가게 <b>전기벤치</b></div>
+    <div class="logo">우리가게 <b>에너지벤치</b></div>
     <button id="keyBtn" class="key" title="API 설정">⚙</button>
   </header>
   <div class="dots"><span class="dot act"></span><span class="dot"></span><span class="dot"></span></div>
 
   <!-- 1. 고지서 인식 -->
   <section id="s1" class="screen on">
-    <h2>전기 고지서로 1분 진단</h2>
-    <p class="lead">고지서를 올리면 AI가 계약종·사용량을 읽고<br>동종업계와 비교해 드려요.</p>
+    <h2>에너지 고지서로 1분 진단</h2>
+    <p class="lead">전기·가스 고지서를 올리면 AI가 용도·사용량을 읽고<br>같은 동네·같은 업종과 비교해 드려요.</p>
 
     <label class="drop" for="fileIn">
       <div class="cam"></div>
-      <div class="dtitle">전기 고지서 촬영·업로드</div>
-      <div class="dsub">계약종·사용량 AI 자동인식</div>
+      <div class="dtitle">에너지 고지서(전기·가스) 촬영·업로드</div>
+      <div class="dsub">용도·사용량 AI 자동인식</div>
       <input id="fileIn" type="file" accept="image/*" hidden>
     </label>
 
@@ -74,13 +74,13 @@
       <div id="saveLabel" class="slabel">계약 변경 시 연간 절감 예상액</div>
       <div id="saveBig" class="sbig">₩1,180,000</div>
     </div>
-    <button id="applyBtn" class="cta">한전에 요금제 변경 신청 →</button>
-    <div class="note">※ 절감액은 한전 요금표 기반 추정. 실제 변경 가부는 한전 확인 필요.</div>
+    <button id="applyBtn" class="cta">요금제 변경 신청 →</button>
+    <div id="rxNote" class="note">※ 절감액은 공급사 요금표 기반 추정. 실제 변경 가부는 공급사 확인 필요.</div>
 
     <div class="nav"><button id="back3" class="ghost">← 벤치마크</button></div>
   </section>
 
-  <footer class="foot">한전 공공데이터 기반 · 데모 · 프로젝트윤</footer>
+  <footer class="foot">한국가스공사 공공데이터 기반 · 데모 · 프로젝트윤</footer>
 </div>
 
 <script src="data.js"></script>
